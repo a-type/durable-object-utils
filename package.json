@@ -1,12 +1,13 @@
 {
-	"name": "durable-object-utils",
+	"name": "@a-type/durable-object-utils",
 	"version": "1.0.0",
 	"description": "",
 	"main": "index.js",
 	"scripts": {
 		"build": "tsc",
 		"test": "vitest",
-		"test:types": "wrangler types -c tests/wrangler.toml tests/env.d.ts"
+		"test:types": "wrangler types -c tests/wrangler.toml tests/env.d.ts",
+		"bump": "bumpp"
 	},
 	"keywords": [],
 	"author": "",
@@ -20,6 +21,7 @@
 		"@cloudflare/vitest-pool-workers": "0.8.49",
 		"@cloudflare/workers-types": "^4.20250920.0",
 		"@types/node": "^22.0.0",
+		"bumpp": "^10.2.3",
 		"kysely": "^0.28.7",
 		"typescript": "^5.9.2",
 		"vitest": "^3.2.4",
