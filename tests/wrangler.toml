@@ -1,0 +1,10 @@
+name = "integration-tests"
+main = "integration.ts"
+compatibility_date = "2024-04-03"
+
+[durable_objects]
+bindings = [{ name = "TEST_OBJECT", class_name = "TestObject" }]
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["TestObject"]
